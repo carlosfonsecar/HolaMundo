@@ -2,6 +2,10 @@ package com.codigofacilito;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hola, Mundo!");
+
+        Mensaje msg = new Mensaje();
+        String escribeTuMensaje = msg.solicitaDatos("Escribe tu mensaje: ");
+        msg.saludar(escribeTuMensaje);
+
     }
 }
